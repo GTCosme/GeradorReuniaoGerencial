@@ -474,7 +474,7 @@ def processar_todos_os_gerenciais():
 
     pdfs_ordenados = sorted(pdfs, key=chave_mes_ano)
 
-    
+
     print(f"Serão processados {len(pdfs_ordenados)} arquivo(s), em ordem cronológica:")
     for pdf_path in pdfs_ordenados:
         ano, mes = chave_mes_ano(pdf_path)
